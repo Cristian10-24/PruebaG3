@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maquillaje</title>
+    <link rel="icon"  type="image/png" href="img/mitiko.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/maquillaje.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">mitiko</a>
+        <nav class="menu">
+            <div class="btn">
+                <i class="fas fa-times close-btn"></i>
+            </div>
+            <ul class="shpp">
+                <li><a href="#">Tienda<ion-icon name="chevron-down-outline"></ion-icon></a>
+                    <ul class="shpp1">
+                        <li><a href="skincare.html">Skincare</a></li>
+                        <li><a href="maquillaje.html">Maquillaje</a></li>
+                        <li><a href="accesorios.html">Accesorios</a></li>
+                        <li><a href="peluches.html">Peluches</a></li>
+                    </ul>
+                </li>
+            </ul>
+            
+        </nav>
+
+        <div class="usuario">
+            <a href="inicio.html"><ion-icon name="person-outline"></ion-icon></a>
+        </div>
+        <div class="carrito">
+            <div class="container-cart-icon">
+                <a href="#"><ion-icon name="bag-handle-outline" class="icon-cart"></ion-icon></a>
+                <div class="count-products">
+                <span id="contador-productos">0</span>
+                </div>
+            </div>
+
+            
+            <div class="container-cart-products hidden-cart">
+                <div class="row-product">
+                    <div class="cart-product">
+                        <div class="info-cart-products">
+                            <span class="cantidad-producto-carrito">1</span>
+                            <p class="titulo-producto-carrito"></p>
+                            <span class="precio-producto-carrito">$</span>
+    
+                        </div>
+                        <ion-icon name="close-outline" class="icon-close"></ion-icon>
+                    </div>
+                </div>
+                <form action="https://formsubmit.co/africanovalentina@gmail.com" method="POST">
+                    <div class="cart-total">
+                        <h3>Total</h3>
+                        <span class="total-pagar">$0</span>
+                    </div>
+                    <input type="submit" value="Realizar Compra" class="comprar">
+
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+                    <input type="hidden" name="_captcha" value="false">
+                </form>
+            </div>
+        </div> 
+        
+
+        <div class="btn">
+            <i class="fas fa-bars menu-btn"></i>
+        </div>
+    </header>
+    
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+    <!--productos de maquillaje-->
+    <div class="container-items">
+        <div class="item">
+            <figure>
+                <img src="img/gloss1.jfif" alt="producto">
+            </figure>
+            <div class="info-product">
+                <h3>Colorpop, Ultra glossy lip tono #01</h3>
+                <p class="price">$30000</p>
+                <button class="btn-add-cart"><ion-icon name="bag-handle-outline"></ion-icon></button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="img/gloss2.jfif" alt="producto">
+            </figure>
+            <div class="info-product">
+                <h3>Colorpop, Roller gloss </h3>
+                <p class="price">$22000</p>
+                <button class="btn-add-cart"><ion-icon name="bag-handle-outline"></ion-icon></button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="img/tinta1.jfif" alt="producto">
+            </figure>
+            <div class="info-product">
+                <h3>Ere Perez, cheek & lip tint</h3>
+                <p class="price">$20000</p>
+                <button class="btn-add-cart"><ion-icon name="bag-handle-outline"></ion-icon></button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="img/liplinear1.jfif" alt="producto">
+            </figure>
+            <div class="info-product">
+                <h3>Peri Pera, lip liner #01</h3>
+                <p class="price">$10000</p>
+                <button class="btn-add-cart"><ion-icon name="bag-handle-outline"></ion-icon></button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="img/labial1.jfif" alt="producto">
+            </figure>
+            <div class="info-product">
+                <h3>ILIA, lipstick matte #01 </h3>
+                <p class="price">$25000</p>
+                <button class="btn-add-cart"><ion-icon name="bag-handle-outline"></ion-icon></button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="img/labial2.jfif" alt="producto">
+            </figure>
+            <div class="info-product">
+                <h3>ILIA, lipstick matte #02</h3>
+                <p class="price">$25000</p>
+                <button class="btn-add-cart"><ion-icon name="bag-handle-outline"></ion-icon></button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="img/brillos.jfif" alt="producto">
+            </figure>
+            <div class="info-product">
+                <h3>Sugar Winil, Glitter fresia</h3>
+                <p class="price">$18000</p>
+                <button class="btn-add-cart"><ion-icon name="bag-handle-outline"></ion-icon></button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="img/base1.jfif" alt="producto">
+            </figure>
+            <div class="info-product">
+                <h3>Pixi, Glow Tint Foundation Cushion #01</h3>
+                <p class="price">$65000</p>
+                <button class="btn-add-cart"><ion-icon name="bag-handle-outline"></ion-icon></button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="img/delineador.jfif" alt="producto">
+            </figure>
+            <div class="info-product">
+                <h3>HIPDOT, Hello Kitty Eye liner</h3>
+                <p class="price">$15000</p>
+                <button class="btn-add-cart"><ion-icon name="bag-handle-outline"></ion-icon></button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="img/pestañinaydelineador.jfif" alt="producto">
+            </figure>
+            <div class="info-product">
+                <h3>HIPDOT, Hello Kitty TWN</h3>
+                <p class="price">$38000</p>
+                <button class="btn-add-cart"><ion-icon name="bag-handle-outline"></ion-icon></button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="img/corrector1.jfif" alt="producto">
+            </figure>
+            <div class="info-product">
+                <h3>Wake Me Up, HD Blur Full Coverage Concealer</h3>
+                <p class="price">$43000</p>
+                <button class="btn-add-cart"><ion-icon name="bag-handle-outline"></ion-icon></button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="img/polvocompacto1.jfif" alt="producto">
+            </figure>
+            <div class="info-product">
+                <h3>Too Faced, Primed & Poreless Face Primer and Setting Powder</h3>
+                <p class="price">$50000</p>
+                <button class="btn-add-cart"><ion-icon name="bag-handle-outline"></ion-icon></button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="img/correctores.jfif" alt="producto">
+            </figure>
+            <div class="info-product">
+                <h3>Pixi, Petra Eye Bright Kit Concealers</h3>
+                <p class="price">$40000</p>
+                <button class="btn-add-cart"><ion-icon name="bag-handle-outline"></ion-icon></button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="img/polvosuelto1.jfif" alt="producto">
+            </figure>
+            <div class="info-product">
+                <h3>ONE/SIZE by Patrick Starr, MIni Ultimate Blurring Setting Powder Universal Translucent</h3>
+                <p class="price">$52000</p>
+                <button class="btn-add-cart"><ion-icon name="bag-handle-outline"></ion-icon></button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="img/pestañina1.jfif" alt="producto">
+            </figure>
+            <div class="info-product">
+                <h3>Shein, Transparent Eyelash</h3>
+                <p class="price">$12000</p>
+                <button class="btn-add-cart"><ion-icon name="bag-handle-outline"></ion-icon></button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="img/rubor1.jfif" alt="producto">
+            </figure>
+            <div class="info-product">
+                <h3>Too Faced, Peaches & Cream</h3>
+                <p class="price">$20000</p>
+                <button class="btn-add-cart"><ion-icon name="bag-handle-outline"></ion-icon></button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="img/rubor2.jfif" alt="producto">
+            </figure>
+            <div class="info-product">
+                <h3>Kaja Beauty, Liquid Cushion Blush Stamp</h3>
+                <p class="price">$40000</p>
+                <button class="btn-add-cart"><ion-icon name="bag-handle-outline"></ion-icon></button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="img/sombras1.jfif" alt="producto">
+            </figure>
+            <div class="info-product">
+                <h3>Rom&nd, Better Than Eyes N01</h3>
+                <p class="price">$30000</p>
+                <button class="btn-add-cart"><ion-icon name="bag-handle-outline"></ion-icon></button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="img/sombras2.jfif" alt="producto">
+            </figure>
+            <div class="info-product">
+                <h3>Sheglam, Wonka Bar Eyeshadow Palette</h3>
+                <p class="price">$70000</p>
+                <button class="btn-add-cart"><ion-icon name="bag-handle-outline"></ion-icon></button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="img/sombras3.jfif" alt="producto">
+            </figure>
+            <div class="info-product">
+                <h3>Wet n Wild, Kuromi Eyeshadow</h3>
+                <p class="price">$60000</p>
+                <button class="btn-add-cart"><ion-icon name="bag-handle-outline"></ion-icon></button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="img/sombras4.jfif" alt="producto">
+            </figure>
+            <div class="info-product">
+                <h3>Espoir, Glitter Bomb Palette </h3>
+                <p class="price">$30000</p>
+                <button class="btn-add-cart"><ion-icon name="bag-handle-outline"></ion-icon></button>
+            </div>
+        </div>
+    </div>
+<br>
+<br>
+<br>
+<br>
+    <!--Boton flotante de contacto-->
+    <div class="containerr">
+        <input type="checkbox" id="btn-mas">
+        <div class="Contactanos">
+            <a href="Contactanos.html"><ion-icon name="chatbubble-ellipses" class="icon1"></ion-icon></a>
+        </div>
+        
+        <div class="btn-mas">
+            <label for="btn-mas"><ion-icon name="help-circle" class="icon1"></ion-icon></label>
+        </div>
+
+    </div>
+<!--pie de paginas con las redes sociales y demas -->
+    <footer class="pie-pagina">
+        <div class="ctn">
+            <div class="pie-pagina-2">
+                <div class="pie-pagina-links">
+                    <h3>COMPAÑIA</h3>
+                    <ul>
+                        <li><a href="#nosotros">Sobre Nosotros</a></li>
+                        <li><a href="#productos">Nuestros Productos y Articulos</a></li>
+                    </ul>
+                </div>
+                <div class="pie-pagina-links">
+                    <h3>POLÍTICAS</h3>
+                    <ul>
+                        <li><a href="#">Que informacion recopilamos</a></li>
+                        <li><a href="#">Cómo usamos tu informacion personal </a></li>
+                        <li><a href="#">Compartiendo tu informacion personal</a></li>
+                        <li><a href="#">Tus derechos</a></li>
+                        <li><a href="#">Retención de datos</a></li>
+                    </ul>
+                </div>
+                <div class="pie-pagina-links">
+                    <h3>TIENDA</h3>
+                    <ul>
+                        <li><a href="maquillaje.html">Maquillaje </a></li>
+                        <li><a href="skincare.html">skincare</a></li>
+                        <li><a href="accesorios.html">Accesorios</a></li>
+                        <li><a href="peluches.html">Peluches</a></li>
+                    </ul>
+                </div>
+                
+                <div class="pie-pagina-links">
+                    <h3>SIGUÉNOS</h3>
+                    <div class="redes-sociales">
+                        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-tiktok"></ion-icon></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/maquillaje.js"></script>
+    <script src="js/index.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  
+</body>
+</html>

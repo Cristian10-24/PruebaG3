@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;600&display=swap');
+
+
+#nosotros{
+    padding-top: 0%;
+    background: hsl(312, 100%, 94%);
+}
+
+#nosotros h1{
+    padding-left: 6%;
+    font-family: 'Poppins', sans-serif;
+    color: dimgray;
+}
+#nosotros p{
+    padding-left: 6%;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(56, 54, 54);
+    font-size: 18px;
+}
+#nosotros img{
+    top: 10%;
+    width: 100%;
+    max-width: 100%;
+    margin: 10px;
+    margin-top: 30px;
+    
+    
+}

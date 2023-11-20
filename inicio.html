@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iniciarsesion</title>
+    <link rel="icon"  type="image/png" href="img/mitiko.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="css/inicio.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">mitiko</a>
+        <nav class="menu">
+            <div class="btn">
+                <i class="fas fa-times close-btn"></i>
+            </div>
+            <ul class="shpp">
+                <li><a href="#">Tienda<ion-icon name="chevron-down-outline"></ion-icon></a>
+                    <ul class="shpp1">
+                        <li><a href="skincare.html">Skincare</a></li>
+                        <li><a href="maquillaje.html">Maquillaje</a></li>
+                        <li><a href="accesorios.html">Accesorios</a></li>
+                        <li><a href="peluches.html">Peluches</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="usuario">
+            <a href="inicio.html"><ion-icon name="person-outline"></ion-icon></a>
+        </div>
+        <div class="carrito">
+            <a href="#"><ion-icon name="bag-handle-outline"></ion-icon></a>
+        </div>
+        
+        <div class="btn">
+            <i class="fas fa-bars menu-btn"></i>
+        </div>
+
+    </header>
+    
+    <section class="section-main">
+        <section class="formulario">
+    
+            <h2 clas="Titulo "> Inicia sesion</h2>
+            <form id="loginform">
+            
+                <label>E-mail</label>
+                <input class="control" type="email" name="correo" id="email" placeholder="ingrese su correo" required autofocus>
+                <label>Contraseña</label>
+                <input class= "control" type="password" name="contraseña" id="password" placeholder="ingrese su contraseña" required>
+            
+                        
+            <input class="bottons" type="submit" value="ingresar">
+            <p >Si no tienes cuenta registrate  <a href="registro.html">aqui</a></p>
+            </form>
+           
+        </section>  
+        <script src="login.js"></script>
+    </section>
+
+<!--Boton flotante de contacto-->
+    <div class="containerr">
+        <input type="checkbox" id="btn-mas">
+        <div class="Contactanos">
+            <a href="Contactanos.html"><ion-icon name="chatbubble-ellipses" class="icon1"></ion-icon></a>
+        </div>
+        
+        <div class="btn-mas">
+            <label for="btn-mas"><ion-icon name="help-circle" class="icon1"></ion-icon></label>
+        </div>
+
+    </div> 
+<!--pie de paginas con las redes sociales y demas -->
+    <footer class="pie-pagina">
+        <div class="ctn">
+            <div class="pie-pagina-2">
+                <div class="pie-pagina-links">
+                    <h3>COMPAÑIA</h3>
+                    <ul>
+                        <li><a href="#nosotros">Sobre Nosotros</a></li>
+                        <li><a href="#productos">Nuestros Productos y Articulos</a></li>
+                    </ul>
+                </div>
+                <div class="pie-pagina-links">
+                    <h3>Políticas</h3>
+                    <ul>
+                        <li><a href="#">Que informacion recopilamos</a></li>
+                        <li><a href="#">Cómo usamos tu informacion personal </a></li>
+                        <li><a href="#">Compartiendo tu informacion personal</a></li>
+                        <li><a href="#">Tus derechos</a></li>
+                        <li><a href="#">Retención de datos</a></li>
+                    </ul>
+                </div>
+                <div class="pie-pagina-links">
+                    <h3>TIENDA</h3>
+                    <ul>
+                        <li><a href="maquillaje.html">Maquillaje </a></li>
+                        <li><a href="skincare.html">skincare</a></li>
+                        <li><a href="accesorios.html">Accesorios</a></li>
+                        <li><a href="peluches.html">Peluches</a></li>
+                    </ul>
+                </div>
+                
+                <div class="pie-pagina-links">
+                    <h3>SIGUENOS</h3>
+                    <div class="redes-sociales">
+                        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-tiktok"></ion-icon></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="js/index.js"></script>
+
+
+</body>
+</html>

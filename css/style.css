@@ -1,0 +1,475 @@
+@import url(productos.css);
+@import url(nosotros.css);
+@import url(comentario.css);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body{
+    min-height: 100vh;
+    
+  }
+  header .logo{
+    color: #000000;
+    font-weight: bold;
+    font-size: 3em;
+    letter-spacing: 4px;
+    transition: 1.5s;
+    text-decoration: none;
+    /*margin-right: 720px;
+    margin-left: 20px*/
+
+  }
+  /*banner*/
+  .section-main{
+    position: relative;
+    width: 100%;
+    min-height: 80vh;
+    background: linear-gradient(to left, rgba(207, 233, 241, 0.8), rgba(0,0,0,0.1)),
+    url(img/banner.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 70px;
+    
+  }
+  
+
+  /*Efecto maquina de escrbir en el banner */
+  .maquina{
+    background: rgb(184, 125, 131);
+    position: relative;
+  }
+  .maquina::after{
+    content: "";
+    border-left: 3px solid black; 
+    background: rgb(233, 211, 211);
+    right: 0;
+    height: 100%;
+    position: absolute;
+    animation: maquinaescribir 5s infinite alternate steps(32);
+  }
+  @keyframes maquinaescribir{
+    from{
+      width: 100%;
+    }
+    to {
+      width: 0;
+    }
+  }
+  .maquina2{
+    background: rgb(146, 111, 114);
+    position: relative;
+  }
+  .maquina2::after{
+    content: "";
+    border-left: 4px solid black; 
+    background: rgb(233, 211, 211);
+    right: 0;
+    height: 100%;
+    position: absolute;
+    animation: maquinaescribir 8s alternate steps(35);
+  }
+  @keyframes maquinaescribir{
+    from{
+      width: 100%;
+    }
+    to {
+      width: 0;
+    }
+  }
+ 
+  
+  .section-main h1{
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 35px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 60px;
+    text-shadow: 0 0 3px #fff, 0 0 3px #000000;
+    
+  }
+  /*header*/
+  header{
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    transition: 0.6s;
+    /*min-width: 1368px;*/
+  }
+
+  
+  header.down{
+    background: #dfe5ec;
+    padding: 20px 40px;
+  }
+  
+  header .brand{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    
+  }
+  
+  header .menu{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+  }
+  header.menu ul{
+    position: relative;
+    display: flex;
+    justify-content: right;
+    float: left;
+  }
+  
+  
+  header .menu ul li{
+    list-style: none;
+  }
+  .shpp1{
+    position: absolute;
+    align-items: center;
+    top: 35px;
+    right: 0;
+
+    background-color: rgb(182, 187, 211);
+    width: 200px;
+    z-index: 1;
+    border-radius: 10px;
+    
+  }
+  .shpp1{
+    display: none;
+  }
+  .shpp:hover .shpp1{
+    display: block;
+  }
+  
+  header .menu a{
+    color: #000000;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    margin: 25px 25px;
+    padding: 10px 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+    transition-property: color, background;
+  }
+  
+   header .menu a:hover{
+    color: #000;
+    background: #fff;
+  }
+  
+  .section-two{
+    padding: 20px;
+  }
+  
+  header .btn{
+    color: #000000;
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+  }
+  /*cuando este en PC 1368px*/
+  @media (max-width: 480px){
+    header, header.down{
+      padding: 20px 40px;
+      
+    }
+    header .btn{
+      display: block;
+    }
+    header .menu{
+      position: fixed;
+      background: #cdd0e4;
+      min-width: 330px;
+      height: 100vh;
+      top: 0;
+      right: -100%;
+      padding: 80px 50px;
+      transition: 0.5s;
+      transition-property: right;
+    }
+
+    header .menu ul{
+        flex-direction: column;
+    }
+
+    header .menu.active{
+      right: 0;
+    }
+
+    header .menu .close-btn{
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin: 25px;
+    }
+
+    header .menu a{
+      display: block;
+      font-size: 20px;
+      margin: 10px;
+      padding: 0 15px;
+    }
+    
+    
+    .shpp1{
+      position: absolute;
+      align-items: center;
+      top: 325px;
+      right: 50px;
+      
+    }
+    
+  }
+  
+  /*cuando este en dispositivos moviles 480px*/
+  @media (max-width: 1368px){
+    .section-main h1{
+      font-size: 60px;
+      line-height: 80px;
+      text-align: center;
+    }
+    header{
+      padding: 10px 38px;
+    }
+    /*header .logo{
+      margin-right: 720px;
+      margin-left: 20px;  
+    }*/
+    /*header .logo{
+      font-size: 2.5em;
+      letter-spacing: 2px;
+      transition: 1.5s;
+      text-decoration: none;
+    }*/
+    section .nosotros{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    section .nosotros h1{
+      /*margin-left: 0;*/
+      text-align: center;
+    }
+    section .nosotros p{
+      /*margin-left: 0;*/
+      text-align: center;
+    }
+
+    section .nosotros .tgh{
+      margin-right: 40px;
+    }
+    
+    header .carrito a{
+      padding: 4px;
+      font-size: 1em;
+      color: #000;
+    
+    }
+    
+    header .usuario a{
+      padding: 4px;
+      font-size: 1em;
+      color: #000;
+      
+    }
+    
+    
+  }
+  /*icons de la barra de navegacion*/
+  header .carrito a{
+    padding: 5px;
+    font-size: 2em;
+    color: #000;
+    border-radius: 10px;
+    transition: 0.3s;
+    transition-property: color, background;
+  }
+  header .carrito a:hover{
+    color: #000;
+    background: #fff;
+  }
+  
+  header .usuario a{
+    padding: 5px;
+    font-size: 2em;
+    color: #000;
+    border-radius: 10px;
+    transition: 0.3s;
+    transition-property: color, background;
+    
+  }
+  header .usuario a:hover{
+    color: #000;
+    background: #fff;
+  }
+  /*pagina de inicio*/
+  section .nosotros{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  section .nosotros .tgh{
+    margin-right: 50px;
+  }
+  
+  .section-two p{
+    float: none;
+    margin-left: auto;
+    margin-right: auto; 
+  }
+
+  .section-two{
+    padding: 50px 15px;
+  }
+  section .migh{
+    width: 350px;
+    height: 250px;
+    display: flex;
+
+  }
+  .section-two h1{
+    padding: 14px 8px;
+  }
+  #btn-mas{
+    display: none;
+
+  }
+  .containerr{
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+
+  }
+  .Contactanos a, .icon1{
+    display: block;
+    text-decoration: none;
+    color: #131725;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 30%;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0, 4);
+    transition: all 500ms ease;
+
+
+  }
+  .Contactanos a:hover{
+    background: #6c7186;
+    color: #cecde2;
+  }
+  .Contactanos a{
+    margin-bottom: -15px;
+    opacity: 0;
+    visibility: hidden;
+
+  }
+  #btn-mas:checked~ .Contactanos a{
+    margin-bottom: 10px;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .ctn{
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  /*pie pagina*/
+  .pie-pagina{
+    background-color: rgb(113, 104, 128);
+    padding: 80px 0;
+
+  }
+  .pie-pagina-2{
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+  .pie-pagina-links{
+    width: 25%;
+    padding: 0 15px;
+
+  }
+  .pie-pagina-links h3{
+    font-size: 20px;
+    color: #100d13;
+    margin-bottom: 50px;
+    font-weight: 500;
+    border-bottom: 2px solid rgb(60, 38, 95);
+    padding-bottom: 10px;
+    display: inline-block;
+  }
+  .pie-pagina-links ul li{
+    list-style: none;
+  }
+  .pie-pagina-links ul li a{
+    font-size: 18px;
+    text-decoration: none;
+    color: #000000;
+    display: block;
+    margin-bottom: 15px;
+    transition: all .3s ease;
+  }
+  .pie-pagina-links ul li a:hover{
+    color: #80769c;
+    padding-left: 6px;
+  }
+  .redes-sociales a{
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    color: #393f57;
+    background-color: rgb(49, 35, 61);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #cdd0e4;
+    transition: all .5s ease;
+  }
+  .redes-sociales a:hover{
+    background-color: #80769c;
+  }
+  @media(max-width:480px){
+    .pie-pagina-2{
+      text-align: center;
+    }
+    
+    .pie-pagina-links{
+      width: 100%;
+      margin-bottom: 30px;
+    }
+  }
+ 
+
+
+
+
+  
